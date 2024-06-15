@@ -1,0 +1,152 @@
+@use 'mixins' as *;
+
+@mixin buttonDefaults {
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  transition: all 0.25s linear;
+}
+
+@mixin button ($backgroundColor, $color, $borderColor: transparent) {
+  background-color: $backgroundColor;
+  border: 1px solid $borderColor;
+  color: $color;
+}
+
+.btn {
+  @include buttonDefaults;
+
+  &-primary {
+    @include button(var(--color-primary), white);
+    @include dismissable(white, var(--color-primary));
+
+    &:hover {
+      background-color: var(--color-primary-light);
+    }
+
+    &--outlined {
+      @include button(white, var(--color-primary), var(--color-primary));
+      @include dismissable(var(--color-primary), white);
+
+      &:hover {
+        @include dismissable(var(--color-primary-light), white);
+        background-color: var(--color-primary);
+        color: white;
+      }
+    }
+  }
+
+  &-secondary {
+    @include button(var(--color-secondary), black);
+    @include dismissable(white, var(--color-secondary));
+
+    &:hover {
+      background-color: var(--color-secondary-light);
+    }
+
+    &--outlined {
+      @include button(white, black, var(--color-secondary));
+      @include dismissable(var(--color-secondary), white);
+
+      &:hover {
+        @include dismissable(var(--color-secondary-light), black);
+        background-color: var(--color-secondary);
+      }
+    }
+  }
+
+  &-success {
+    @include button(var(--color-success), black);
+    @include dismissable(white, var(--color-success));
+
+    &:hover {
+      background-color: var(--color-success-light);
+    }
+
+    &--outlined {
+      @include button(white, black, var(--color-success));
+      @include dismissable(var(--color-success), white);
+
+      &:hover {
+        @include dismissable(var(--color-success-light), black);
+        background-color: var(--color-success);
+      }
+    }
+  }
+
+  &-danger {
+    @include button(var(--color-danger), white);
+    @include dismissable(white, var(--color-danger));
+
+    &:hover {
+      background-color: var(--color-danger-light);
+    }
+
+    &--outlined {
+      @include button(white, var(--color-danger), var(--color-danger));
+      @include dismissable(var(--color-danger), white);
+
+      &:hover {
+      @include dismissable(var(--color-danger-light), black);
+        background-color: var(--color-danger);
+        color: white;
+      }
+    }
+  }
+
+  &-warning {
+    @include button(var(--color-warning), black);
+    @include dismissable(white, var(--color-warning));
+
+    &:hover {
+      background-color: var(--color-warning-light);
+    }
+
+    &--outlined {
+      @include button(white, black, var(--color-warning));
+      @include dismissable(var(--color-warning), white);
+
+      &:hover {
+        @include dismissable(var(--color-warning-light), black);
+        background-color: var(--color-warning);
+      }
+    }
+  }
+
+  &-info {
+    @include button(var(--color-info), black);
+    @include dismissable(white, var(--color-info));
+
+    &:hover {
+      background-color: var(--color-info-light);
+    }
+
+    &--outlined {
+      @include button(white, black, var(--color-info));
+      @include dismissable(var(--color-info), white);
+
+      &:hover {
+        @include dismissable(var(--color-info-light), black);
+        background-color: var(--color-info);
+      }
+    }
+  }
+
+  &-link {
+    @include button(transparent, black);
+    @include dismissable(transparent, black);
+    text-decoration: underline;
+
+    &:hover {
+      color: lighten(black, 25%)
+    }
+  }
+}
+
+.dismiss-btn {
+  background: none;
+  border: none;
+}

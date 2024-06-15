@@ -1,0 +1,17 @@
+@mixin dismissable($backgroundColor, $color) {
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    cursor: pointer;
+    margin-left: 0.25rem;
+
+    path {
+      fill: $backgroundColor;
+
+      + path {
+        fill: $color;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #{$primary};
+  --color-primary-light: #{$primaryLight};
+  --color-secondary: #{$secondary};
+  --color-secondary-light: #{$secondaryLight};
+  --color-success: #{$success};
+  --color-success-light: #{$successLight};
+  --color-danger: #{$danger};
+  --color-danger-light: #{$dangerLight};
+  --color-warning: #{$warning};
+  --color-warning-light: #{$warningLight};
+  --color-info: #{$info};
+  --color-info-light: #{$infoLight};
+}

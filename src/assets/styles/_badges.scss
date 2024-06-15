@@ -1,0 +1,83 @@
+@use 'mixins' as *;
+
+@mixin badge ($backgroundColor, $color, $borderColor: transparent) {
+  background-color: $backgroundColor;
+  border: 1px solid $borderColor;
+  border-radius: 50rem !important;
+  color: $color;
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.badge {
+  @include badge(black, white);
+
+  &-primary {
+    @include badge(var(--color-primary), white);
+    @include dismissable(white, var(--color-primary));
+
+    &--outlined {
+      @include badge(white, var(--color-primary), var(--color-primary));
+      @include dismissable(var(--color-primary), white);
+    }
+  }
+
+  &-secondary {
+    @include badge(var(--color-secondary), black);
+    @include dismissable(white, var(--color-secondary));
+
+    &--outlined {
+      @include badge(white, black, var(--color-secondary));
+      @include dismissable(var(--color-secondary), white);
+    }
+  }
+
+  &-success {
+    @include badge(var(--color-success), black);
+    @include dismissable(white, var(--color-success));
+
+    &--outlined {
+      @include badge(white, black, var(--color-success));
+      @include dismissable(var(--color-success), white);
+    }
+  }
+
+  &-danger {
+    @include badge(var(--color-danger), white);
+    @include dismissable(white, var(--color-danger));
+
+    &--outlined {
+      @include badge(white, var(--color-danger), var(--color-danger));
+      @include dismissable(var(--color-danger), white);
+    }
+  }
+
+  &-warning {
+    @include badge(var(--color-warning), black);
+    @include dismissable(white, var(--color-warning));
+
+    &--outlined {
+      @include badge(white, black, var(--color-warning));
+      @include dismissable(var(--color-warning), white);
+    }
+  }
+
+  &-info {
+    @include badge(var(--color-info), black);
+    @include dismissable(white, var(--color-info));
+
+    &--outlined {
+      @include badge(white, black, var(--color-info));
+      @include dismissable(var(--color-info), white);
+    }
+  }
+
+  &-link {
+    @include badge(transparent, black);
+    @include dismissable(transparent, black);
+    text-decoration: underline;
+  }
+}
