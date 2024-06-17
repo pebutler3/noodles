@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Button from '../../components/Button.vue';
 import DefaultButtons from '../DefaultButtons.vue';
 import OutlinedButtons from '../OutlinedButtons.vue';
 </script>

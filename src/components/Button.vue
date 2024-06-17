@@ -17,6 +17,7 @@ const props = withDefaults(defineProps<{
     'info--outlined' |
     'link'
   )
+  dismissable?: boolean
 }>(), {
   kind: 'primary',
 })
