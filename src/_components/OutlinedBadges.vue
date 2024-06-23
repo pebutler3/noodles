@@ -12,30 +12,30 @@ const test = (event: Event) => {
 
 <template>
   <template v-if="!dismissable">
-  <Badge title="Primary" kind="primary--outlined" />
-  <Badge title="Secondary" kind="secondary--outlined" />
-  <Badge title="Success" kind="success--outlined" />
-  <Badge title="Danger" kind="danger--outlined" />
-  <Badge title="Warning" kind="warning--outlined" />
-  <Badge title="Info" kind="info--outlined" />
+  <Badge text="Primary" class="badge badge-primary--outlined" />
+  <Badge text="Secondary" class="badge badge-secondary--outlined" />
+  <Badge text="Success" class="badge badge-success--outlined" />
+  <Badge text="Danger" class="badge badge-danger--outlined" />
+  <Badge text="Warning" class="badge badge-warning--outlined" />
+  <Badge text="Info" class="badge badge-info--outlined" />
   </template>
   <template v-else>
-  <Badge title="Primary" kind="primary--outlined">
+  <Badge text="Primary" class="badge badge-primary--outlined">
     <DismissButton @dismiss="test" />
   </Badge>
-  <Badge title="Secondary" kind="secondary--outlined">
+  <Badge text="Secondary" class="badge badge-secondary--outlined">
     <DismissButton />
   </Badge>
-  <Badge title="Success" kind="success--outlined">
+  <Badge text="Success" class="badge badge-success--outlined">
     <DismissButton />
   </Badge>
-  <Badge title="Danger" kind="danger--outlined">
+  <Badge text="Danger" class="badge badge-danger--outlined">
     <DismissButton />
   </Badge>
-  <Badge title="Warning" kind="warning--outlined">
+  <Badge text="Warning" class="badge badge-warning--outlined">
     <DismissButton />
   </Badge>
-  <Badge title="Info" kind="info--outlined">
+  <Badge text="Info" class="badge badge-info--outlined">
     <DismissButton />
   </Badge>
   </template>

@@ -9,30 +9,30 @@ defineProps<{
 
 <template>
   <template v-if="!dismissable">
-    <Button title="Primary" kind="primary--outlined" />
-    <Button title="Secondary" kind="secondary--outlined" />
-    <Button title="Success" kind="success--outlined" />
-    <Button title="Danger" kind="danger--outlined" />
-    <Button title="Warning" kind="warning--outlined" />
-    <Button title="Info" kind="info--outlined" />
+    <Button text="Primary" class="btn btn-primary--outlined" />
+    <Button text="Secondary" class="btn btn-secondary--outlined" />
+    <Button text="Success" class="btn btn-success--outlined" />
+    <Button text="Danger" class="btn btn-danger--outlined" />
+    <Button text="Warning" class="btn btn-warning--outlined" />
+    <Button text="Info" class="btn btn-info--outlined" />
   </template>
   <template v-else>
-    <Button title="Primary" kind="primary--outlined">
+    <Button text="Primary" class="btn btn-primary--outlined">
       <DismissButton />
     </Button>
-    <Button title="Secondary" kind="secondary--outlined">
+    <Button text="Secondary" class="btn btn-secondary--outlined">
       <DismissButton />
     </Button>
-    <Button title="Secondary" kind="success--outlined">
+    <Button text="Secondary" class="btn btn-success--outlined">
       <DismissButton />
     </Button>
-    <Button title="Danger" kind="danger--outlined">
+    <Button text="Danger" class="btn btn-danger--outlined">
       <DismissButton />
     </Button>
-    <Button title="Warning" kind="warning--outlined">
+    <Button text="Warning" class="btn btn-warning--outlined">
       <DismissButton />
     </Button>
-    <Button title="Info" kind="info--outlined">
+    <Button text="Info" class="btn btn-info--outlined">
       <DismissButton />
     </Button>
   </template>
