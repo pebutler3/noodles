@@ -8,34 +8,34 @@ defineProps<{
 
 <template>
   <template v-if="!dismissable">
-    <Badge title="Primary" kind="primary" />
-    <Badge title="Secondary" kind="secondary" />
-    <Badge title="Success" kind="success" />
-    <Badge title="Danger" kind="danger" />
-    <Badge title="Warning" kind="warning" />
-    <Badge title="Info" kind="info" />
-    <Badge title="Link" kind="link" />
+    <Badge text="Primary" class="badge badge-primary" />
+    <Badge text="Secondary" class="badge badge-secondary" />
+    <Badge text="Success" class="badge badge-success" />
+    <Badge text="Danger" class="badge badge-danger" />
+    <Badge text="Warning" class="badge badge-warning" />
+    <Badge text="Info" class="badge badge-info" />
+    <Badge text="Link" class="badge badge-link" />
   </template>
   <template v-else>
-    <Badge title="Primary" kind="primary">
+    <Badge text="Primary" class="badge badge-primary">
       <DismissButton />
     </Badge>
-    <Badge title="Secondary" kind="secondary">
+    <Badge text="Secondary" class="badge badge-secondary">
       <DismissButton />
     </Badge>
-    <Badge title="Success" kind="success">
+    <Badge text="Success" class="badge badge-success">
       <DismissButton />
     </Badge>
-    <Badge title="Danger" kind="danger">
+    <Badge text="Danger" class="badge badge-danger">
       <DismissButton />
     </Badge>
-    <Badge title="Warning" kind="warning">
+    <Badge text="Warning" class="badge badge-warning">
       <DismissButton />
     </Badge>
-    <Badge title="Info" kind="info">
+    <Badge text="Info" class="badge badge-info">
       <DismissButton />
     </Badge>
-    <Badge title="Link" kind="link">
+    <Badge text="Link" class="badge badge-link">
       <DismissButton />
     </Badge>
   </template>
