@@ -13,34 +13,34 @@ const test = (event: Event) => {
 
 <template>
   <template v-if="!dismissable">
-    <Button title="Primary" @btnClick="test" />
-    <Button title="Secondary" kind="secondary" @btnClick="test"/>
-    <Button title="Success" kind="success" @btnClick="test"/>
-    <Button title="Danger" kind="danger" @btnClick="test"/>
-    <Button title="Warning" kind="warning" @btnClick="test"/>
-    <Button title="Info" kind="info" @btnClick="test"/>
-    <Button title="Link" kind="link" @btnClick="test"/>
+    <Button text="Primary" class="btn btn-primary" @btnClick="test" />
+    <Button text="Secondary" class="btn btn-secondary" outlined />
+    <Button text="Success" class="btn btn-success" />
+    <Button text="Danger" class="btn btn-danger" />
+    <Button text="Warning" class="btn btn-warning" />
+    <Button text="Info" class="btn btn-info" />
+    <Button text="Link" class="btn btn-link" />
   </template>
   <template v-else>
-    <Button title="Primary" kind="primary">
+    <Button text="Primary" class="btn btn-primary">
       <DismissButton />
     </Button>
-    <Button title="Secondary" kind="secondary">
+    <Button text="Secondary" class="btn btn-secondary">
       <DismissButton />
     </Button>
-    <Button title="Secondary" kind="success">
+    <Button text="Secondary" class="btn btn-success">
       <DismissButton />
     </Button>
-    <Button title="Danger" kind="danger">
+    <Button text="Danger" class="btn btn-danger">
       <DismissButton />
     </Button>
-    <Button title="Warning" kind="warning">
+    <Button text="Warning" class="btn btn-warning">
       <DismissButton />
     </Button>
-    <Button title="Info" kind="info">
+    <Button text="Info" class="btn btn-info">
       <DismissButton />
     </Button>
-    <Button title="Link" kind="link">
+    <Button text="Link" class="btn btn-link">
       <DismissButton />
     </Button>
   </template>
