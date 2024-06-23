@@ -5,7 +5,7 @@ import FormContainer from './_components/containers/FormContainer.vue';
 </script>
 
 <template>
-  <h1>Noodles</h1>
+  <h1>noodles</h1>
   <ButtonContainer />
   <BadgeContainer />
   <FormContainer />
