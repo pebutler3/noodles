@@ -1,4 +1,4 @@
-export const standardButtons = () => {
+export const standardButtons = (): string => {
   return `
     // Standard Buttons
     <Button text="Primary" class="btn btn-primary" />
@@ -11,7 +11,7 @@ export const standardButtons = () => {
   `
 };
 
-export const standardButtonsOutlined = () => {
+export const standardButtonsOutlined = (): string => {
   return `
     // Outlined Buttons
     <Button text="Primary" class="btn btn-primary--outlined" />
@@ -24,7 +24,7 @@ export const standardButtonsOutlined = () => {
   `
 }
 
-export const dismissableButtons = () => {
+export const dismissableButtons = (): string => {
   return `
     // Dismissable Button
     <Button title="Primary" class="btn btn-primary">
