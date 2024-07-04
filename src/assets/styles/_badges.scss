@@ -5,7 +5,6 @@
   border: 1px solid $borderColor;
   border-radius: 50rem !important;
   color: $color;
-  display: inline-block;
   padding: 0.35rem 0.65rem;
   line-height: 1;
   text-align: center;
@@ -79,5 +78,10 @@
     @include badge(transparent, black);
     @include dismissable(transparent, black);
     text-decoration: underline;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.45;
   }
 }

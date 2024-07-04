@@ -15,6 +15,7 @@ defineProps<{
     <Button text="Danger" class="btn btn-danger--outlined" />
     <Button text="Warning" class="btn btn-warning--outlined" />
     <Button text="Info" class="btn btn-info--outlined" />
+    <Button text="Disabled" class="btn btn-primary--outlined" disabled />
   </template>
   <template v-else>
     <Button text="Primary" class="btn btn-primary--outlined">

@@ -144,6 +144,11 @@
       color: lighten(black, 25%)
     }
   }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.45;
+  }
 }
 
 .dismiss-btn {

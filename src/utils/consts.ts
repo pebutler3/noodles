@@ -8,6 +8,7 @@ export const standardButtons = (): string => {
     <Button text="Warning" class="btn btn-warning" />
     <Button text="Info" class="btn btn-info" />
     <Button text="Link" class="btn btn-link" />
+    <Button text="Disabled" class="btn btn-primary" disabled />
   `
 };
 
@@ -21,6 +22,7 @@ export const standardButtonsOutlined = (): string => {
     <Button text="Warning" class="btn btn-warning--outlined" />
     <Button text="Info" class="btn btn-info--outlined" />
     <Button text="Link" class="btn btn-link--outlined" />
+    <Button text="Primary" class="btn btn-primary--outlined" disabled />
   `
 }
 

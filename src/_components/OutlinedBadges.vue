@@ -18,6 +18,7 @@ const test = (event: Event) => {
   <Badge text="Danger" class="badge badge-danger--outlined" />
   <Badge text="Warning" class="badge badge-warning--outlined" />
   <Badge text="Info" class="badge badge-info--outlined" />
+  <Badge text="Warning Disabled" class="badge badge-warning--outlined" disabled />
   </template>
   <template v-else>
   <Badge text="Primary" class="badge badge-primary--outlined">

@@ -20,6 +20,7 @@ const test = (event: Event) => {
     <Button text="Warning" class="btn btn-warning" />
     <Button text="Info" class="btn btn-info" />
     <Button text="Link" class="btn btn-link" />
+    <Button text="Primary Disabled" class="btn btn-primary" disabled />
   </template>
   <template v-else>
     <Button text="Primary" class="btn btn-primary">

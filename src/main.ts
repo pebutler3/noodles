@@ -5,7 +5,5 @@ import './assets/styles/styles.scss';
 import { inject } from '@vercel/analytics';
 import App from './App.vue'
 
-inject({
-  debug: false,
-});
+inject({ debug: false });
 createApp(App).mount('#app')
